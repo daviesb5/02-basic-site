@@ -74,7 +74,21 @@ function testChange() {
 }
 */
 
-function checkImg(){
-    var currentImg = document.getElementsByClassName("flex-img-cell")[0].id;
-    alert("currentImg: " + currentImg);
+/*
+TEMPORARY SET-UP
+*/
+var correctImg;
+
+function setCorrectImg(){
+    correctImg = "img-04";
+}
+setCorrectImg();
+
+function checkImg(currentImg){
+    //alert("currentImg: " + currentImg);
+    if (currentImg == correctImg) {
+        alert("Congrats, you found Braedo!");
+    } else {
+        alert("Sorry, guess again");
+    }
 }

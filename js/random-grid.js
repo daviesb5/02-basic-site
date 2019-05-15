@@ -54,16 +54,6 @@ function readNumbers(newArray){
 }
 readNumbers(fileArray);
 
-/*
-function changeImage(){
-    document.getElementById("y").src="img/03-waldo/png/braedo_011.png"
-}
-
-var x = document.getElementById("x");
-var imgs = x.getElementsByTagName("img");
-imgs[0].src="img/03-waldo/png/braedo_012.png";
-*/
-
 //uses arrays to set up images
 function changeImage(newArray){
     alert("[#1] changeImage(): newArray = " + newArray);
@@ -74,3 +64,8 @@ function changeImage(newArray){
     */
 }
 changeImage(fileArray);
+
+function testChange(){
+    var image = document.getElementById('img-02');
+   image.src = "img/waldo/png/braedo-02.png";
+}

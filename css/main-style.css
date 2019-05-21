@@ -1,0 +1,33 @@
+/*
+GENERAL
+*/
+:root {
+    --primary-color: rgba();
+}
+
+/*
+DESKTOP - more than 950 px
+*/
+@media (min-width: 950px){
+    .hamburger-layout {
+        display: none;
+    }
+}
+
+/*
+MOBILE - less than 950 px
+*/
+@media (max-width: 950px){
+    .nav-layout {
+        display: none;
+    }
+}
+
+/*
+MOBILE - less than 700 px
+*/
+@media (max-width: 700px){
+    .nav-layout {
+        display: none;
+    }
+}

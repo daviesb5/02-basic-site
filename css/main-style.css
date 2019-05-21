@@ -2,7 +2,48 @@
 GENERAL
 */
 :root {
-    --primary-color: rgba();
+    --primary-color: rgba(85, 136, 163, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.showcase-layout {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase-layout:before {
+    content:'';
+    /*
+    Author: Skyguy414
+    */
+    background: url('https://upload.wikimedia.org/wikipedia/commons/2/27/Saltlakecity_winter2009.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 /*

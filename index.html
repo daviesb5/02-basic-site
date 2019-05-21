@@ -8,43 +8,44 @@
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Welcome to BraedonDavies.com</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<!--
+	Other items
+	-->
 	<link rel="stylesheet" href="css/main-style.css">
 	<link rel="stylesheet" href="css/menu-style.css">
+	<title>Welcome to BraedonDavies.com</title>
 </head>
 
 <body>
-
-	<div class="hamburger-layout">
-		<div class="hamburger-menu">
-			<div class="bar-1"></div>
-			<div class="bar-2"></div>
-			<div class="bar-3"></div>
+	<div class="hamburger-layout" id="hamburger">
+		<div class="hamburger">
+			<div class="check-box"></div>
 		</div>
-		<div class="menu-list">
+		<div class="menu">
 			<ul>
 				<li>
-					<a href="index.html#header" class="nav-btn">
+					<a href="index.html#header" class="nav-btn" id="home-btn">
 						Home
 					</a>
 				</li>
 				<li>
-					<a href="about.html" class="nav-btn">
+					<a href="about.html" class="nav-btn" id="about-btn">
 						About Me
 					</a>
 				</li>
 				<li>
-					<a href="credits.html" class="nav-btn">
+					<a href="credits.html" class="nav-btn" id="credits-btn">
 						Credits
 					</a>
 				</li>
 				<li>
-					<a href="web-apps/menu.html" class="nav-btn">
+					<a href="web-apps/menu.html" class="nav-btn" id="apps-btn">
 						Apps & Games
 					</a>
 				</li>
 				<li>
-					<a href="samples/index.html" class="nav-btn">
+					<a href="samples/index.html" class="nav-btn" id="samples-btn">
 						Samples
 					</a>
 				</li>
@@ -76,24 +77,29 @@
 		</div>
 	</div>
 
-	<div class="overview-div">
+	<header class="showcase-layout" id="header">
+		<div class="container showcase-inner">
+			<h1>
+				Welcome to BraedonDavies.com
+			</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores reiciendis minima quam molestiae
+				officia distinctio, dolorem unde perferendis natus debitis.
+			</p>
+			<a href="index" class="btn">Continue</a>
+		</div>
+	</header>
+
+	<div class="overview-layout">
 		<!--BD Logo-->
-		<div class="overview-logo-div">
+		<div class="logo-div">
 			<a class="logo-link" href="index.html#header">
 				<img class="logo" src="img/logos/svg/solid_white_1.svg" alt="Menu Logo" id="moving-logo"><br>
 			</a>
 		</div>
 	</div>
 
-	<div class="header-layout" id="header">
-		<div class="header-text">
-			<h1>
-				Welcome to BraedonDavies.com
-			</h1>
-		</div>
-	</div>
-
-	<div class="section-layout">
+	<div class="section-layout" id="section-1">
 		<div class="section-text">
 			<h3>
 				Brief Intro

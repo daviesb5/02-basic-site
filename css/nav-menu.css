@@ -5,7 +5,6 @@ GENERAL
     --nav-color: rgba(0, 51, 78, 1.0);
     /* Color Scheme */
     --bg-color: rgba(232, 232, 232, 1.0);
-    --div-color: rgba(85, 136, 163, 1.0);
     --footer-div-color: rgba(20, 83, 116, 0.75);
     --footer-color: rgba(0, 51, 78, 1.0);
 }
@@ -23,9 +22,7 @@ Nav Menu
 }
 
 .nav-layout .nav-div {
-    /*
-    Layout
-    */
+    /* Layout */
     position: inline-flex;
     max-width: 1000px;
     margin: 0 auto 0 auto;
@@ -36,9 +33,15 @@ Nav Menu
     flex-wrap: wrap;
 }
 
-.nav-layout .nav-div .logo-btn .logo {
+.nav-layout .nav-div .nav-btn .logo {
     width: 20px;
     padding: 0;
+}
+
+.nav-layout .nav-div .nav-btn {
+    width: 100px;
+    height: 50px;
+    background-color: var(--primary-color);
 }
 
 .nav-layout .nav-div a {

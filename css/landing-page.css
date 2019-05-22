@@ -4,7 +4,8 @@ GENERAL
 :root {
     --primary-color: rgba(69,146,175, 0.75);
     --overlay-color: rgba(24, 39, 51, 0.85);
-    --ham-menu-color: rgba(0, 51, 78, 1.0);
+    /* my additions */
+    --ham-color: rgba(0, 51, 78, 1.0);
     --btn-color: rgba(20, 83, 116, 0.75);
     --menu-speed: 0.75s;
 }
@@ -36,11 +37,8 @@ body {
 
 .showcase-layout:before {
     content:'';
-    /*
-    Author: Skyguy414
-    */
     background: url('https://upload.wikimedia.org/wikipedia/commons/2/27/Saltlakecity_winter2009.jpg') no-repeat center center/cover;
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -71,7 +69,7 @@ body {
     background-color: var(--btn-color);
     color: #fff;
     padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     text-decoration: none;
     transition: opacity 1s ease-in;
 }

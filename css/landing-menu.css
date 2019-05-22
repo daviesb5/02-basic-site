@@ -105,7 +105,6 @@ Show menu
 .menu-wrap .toggler:checked ~ .menu > div > div {
     opacity: 1;
     transition: opacity 0.4s ease;
-    /* 34:44 */
 }
 
 .menu-wrap .menu {
@@ -155,6 +154,30 @@ Show menu
     text-decoration: none;
     transition: color 0.4 ease;
 
+}
+
+/*
+Nav Menu
+*/
+.nav-layout {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+}
+
+.nav-layout .nav-div {
+    display: inline;
+    vertical-align: middle;
+}
+
+.nav-layout .nav-logo .logo {
+    width: 90px;
+}
+
+.nav-layout .nav-logo .nav-btn {
+    top: -100px;
+    background: var(--overlay-color);
 }
 
 /*

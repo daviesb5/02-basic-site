@@ -1,0 +1,74 @@
+/*
+GENERAL
+*/
+:root {
+    --nav-color: rgba(0, 51, 78, 1.0);
+    /* Color Scheme */
+    --bg-color: rgba(232, 232, 232, 1.0);
+    --div-color: rgba(85, 136, 163, 1.0);
+    --footer-div-color: rgba(20, 83, 116, 0.75);
+    --footer-color: rgba(0, 51, 78, 1.0);
+}
+
+/*
+Nav Menu
+*/
+.nav-layout {
+    /* Positioning */
+    position: fixed;
+    z-index: 5;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: var(--nav-color);
+}
+
+.nav-layout .nav-div {
+    /*
+    Layout
+    */
+    position: inline-flex;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-layout .nav-div .logo-btn .logo {
+    width: 20px;
+    padding: 0;
+}
+
+.nav-layout .nav-div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+DESKTOP - more than 950 px
+*/
+@media (min-width: 950px){
+    .menu-wrap {
+        display: none;
+    }
+}
+
+/*
+MOBILE - less than 950 px
+*/
+@media (max-width: 950px){
+    .nav-layout .nav-div {
+        display: none;
+    }
+}
+
+/*
+MOBILE - less than 700 px
+*/
+@media (max-width: 700px){
+    .nav-layout .nav-div {
+        display: none;
+    }
+}

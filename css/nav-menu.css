@@ -1,18 +1,7 @@
 /*
-GENERAL
-*/
-:root {
-    --nav-color: rgba(0, 51, 78, 1.0);
-    /* Color Scheme */
-    --bg-color: rgba(232, 232, 232, 1.0);
-    --footer-div-color: rgba(20, 83, 116, 0.75);
-    --footer-color: rgba(0, 51, 78, 1.0);
-}
-
-/*
 Nav Menu
 */
-.nav-layout {
+.nav-wrap {
     /* Positioning */
     position: fixed;
     z-index: 5;
@@ -21,32 +10,43 @@ Nav Menu
     background-color: var(--nav-color);
 }
 
-.nav-layout .nav-div {
-    /* Layout */
-    position: inline-flex;
-    max-width: 1000px;
-    margin: 0 auto 0 auto;
-    padding: 15px 0;
+.nav-wrap .nav-menu {
+    max-width: 800px;
+    margin: 10px auto 0 auto;
+    background-color: var(--nav-color);
+    padding: 10px 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.nav-layout .nav-div .nav-btn .logo {
+.nav-wrap .nav-menu .nav-btn {
+    width: 150px;
+    height: 30px;
+    line-height: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.nav-wrap .nav-menu .nav-btn .logo {
     width: 20px;
-    padding: 0;
+    padding: 0px;
 }
 
-.nav-layout .nav-div .nav-btn {
-    width: 100px;
-    height: 50px;
-    background-color: var(--primary-color);
+.nav-wrap .nav-menu .nav-btn > div {
+    max-width: 120px;
+    height: 30px;
+    margin: 0px auto 0px auto;
+    display: flex;
 }
 
-.nav-layout .nav-div a {
+.nav-wrap .nav-menu .nav-btn > div a {
     color: #fff;
     text-decoration: none;
+    margin: auto;
 }
 
 /*
@@ -62,7 +62,7 @@ DESKTOP - more than 950 px
 MOBILE - less than 950 px
 */
 @media (max-width: 950px){
-    .nav-layout .nav-div {
+    .nav-wrap .nav-menu {
         display: none;
     }
 }
@@ -71,7 +71,7 @@ MOBILE - less than 950 px
 MOBILE - less than 700 px
 */
 @media (max-width: 700px){
-    .nav-layout .nav-div {
+    .nav-wrap .nav-menu {
         display: none;
     }
 }

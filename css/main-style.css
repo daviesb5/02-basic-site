@@ -1,0 +1,18 @@
+/*
+GENERAL
+*/
+:root {
+    /* Color Scheme */
+    --bg-color: rgba(232, 232, 232, 1.0);
+    --main-color: rgba(85, 136, 163, 1.0);
+    --secondary-color: rgba(20, 83, 116, 0.75);
+    --footer-color: rgba(0, 51, 78, 1.0);
+    /* Hamburger Menu */
+    --showcase-color: rgba(69,146,175, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --ham-color: rgba(0, 51, 78, 1.0);
+    /* Nav Menu */
+    --nav-color: rgba(0, 51, 78, 1.0);
+    /* Landing Page */
+    --btn-color: rgba(20, 83, 116, 0.75);
+}

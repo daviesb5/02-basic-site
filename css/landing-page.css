@@ -2,11 +2,6 @@
 GENERAL
 */
 :root {
-    --primary-color: rgba(69,146,175, 0.75);
-    --overlay-color: rgba(24, 39, 51, 0.85);
-    /* my additions */
-    --ham-color: rgba(0, 51, 78, 1.0);
-    --btn-color: rgba(20, 83, 116, 0.75);
     --menu-speed: 0.75s;
 }
 
@@ -29,7 +24,7 @@ body {
 }
 
 .showcase-layout {
-    background-color: var(--primary-color);
+    background-color: var(--showcase-color);
     color: #fff;
     height: 100vh;
     position: relative;

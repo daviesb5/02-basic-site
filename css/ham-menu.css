@@ -28,7 +28,7 @@ GENERAL
     height: 60px;
     padding: 1rem;
     /* Inherits value from main-style.css */
-    background: var(--primary-color);
+    background: var(--showcase-color);
     display: flex;
     align-items: center;
     justify-content: center;

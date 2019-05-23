@@ -1,4 +1,16 @@
 /*
+GENERAL
+*/
+:root {
+    --nav-color: rgba(0, 51, 78, 1.0);
+    /* Color Scheme */
+    --bg-color: rgba(232, 232, 232, 1.0);
+    --main-color: rgba(85, 136, 163, 1.0);
+    --secondary-color: rgba(20, 83, 116, 0.75);
+    --footer-color: rgba(0, 51, 78, 1.0);
+}
+
+/*
 Nav Menu
 */
 .nav-wrap {

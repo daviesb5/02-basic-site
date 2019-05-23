@@ -13,18 +13,74 @@ GENERAL
     --btn-color: rgba(20, 83, 116, 0.75);
     --showcase-color: rgba(69,146,175, 0.75);
     --overlay-color: rgba(24, 39, 51, 0.85);
+    /* Gray Bg */
+    --gray-bg-color: rgba (187, 187, 187, 1.0);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--gray-bg-color);
+    font-family: 'Raleway', Helvetica, sans-serif;
 }
 
 /*
-Ham/Nav Bar Background
+Ham / Nav Bar Background
 
-.menu-bar-wrap {
+.main-menu-wrap {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 100;
+    left: 100;
     z-index: 20;
-    max-width: 100%;
-    min-width: 100%;
+}
+
+.main-menu-wrap .menu-bar {
+    position: absolute;
+    top: 100;
+    left: 100;
+    z-index: 21;
+    width: 100px;
+    height: 50px;
     background-color: var(--nav-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 */
+
+/*
+Sections
+*/
+.section-layout {
+    max-width: 1400px;
+}
+
+/*
+DESKTOP - more than 950 px
+*/
+@media (min-width: 950px){
+    .menu-wrap {
+        display: none;
+    }
+}
+
+/*
+MOBILE - less than 950 px
+*/
+@media (max-width: 950px){
+    .nav-wrap .nav-menu {
+        display: none;
+    }
+}
+
+/*
+MOBILE - less than 700 px
+*/
+@media (max-width: 700px){
+    .nav-wrap .nav-menu {
+        display: none;
+    }
+}

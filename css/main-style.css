@@ -31,16 +31,13 @@ body {
 /*
 Sections
 */
-.section-layout, .footer-layout {
+.section-layout {
     max-width: 1000px;
     margin: 15px auto 0 auto;
     line-height: 1.75;
     padding: 25px 65px;
     display: flex;
     z-index: 0;
-}
-
-.section-layout {
     background-color: var(--body-color);
 }
 
@@ -83,54 +80,55 @@ Footer
 .footer-layout {
     position: absolute;
     bottom: bottom;
-    z-index: 1;
+    z-index: 10;
     max-width: 100%;
     min-width: 100%;
     background-color: var(--footer-color);
 }
 
-.footer-layout .grid-layout {
-    max-width: 800px;
-    margin: 10px auto 0 auto;
+.footer-layout .footer-div {
+    max-width: 900px;
+    margin: 0px auto 0 auto;
     background-color: var(--footer-color);
     padding: 10px 0;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.footer-layout .grid-layout .media-btn {
-    width: 100px;
-    height: 100px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 18px;
-    margin-top: 25px;
-}
-
-.footer-layout .grid-layout .media-btn .img-cell {
-    width: 75%;
-    padding: 10px;
-}
-
-.footer-layout .footer-div {
-    /* Split */
+.footer-layout .footer-div > div {
+    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-layout .grid-layout,
-.footer-layout .section-text {
-    padding: 20px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    flex-basis: 30%;
+.footer-layout .footer-div > div > div {
+    text-align: center;
+    max-width: 900px;
+    max-height: 300px;
 }
 
-.footer-layout .section-text p {
+.footer-layout .footer-div > div > div > ul > li {
+    list-style: none;
     color: #fff;
-    bottom: 0;
+    font-size: 1.0rem;
+    padding: 1.2rem;
+}
+
+.footer-layout .footer-div > div > div > ul > li .media-btn {
+    width: 150px;
+    height: 25px;
+}
+
+.footer-layout .footer-div > div > div > ul > li .media-btn > div .logo {
+    width: 30px;
+    padding: 0px;
+}
+
+.footer-layout .footer-div > div > div > ul > li .media-btn > div {
 }
 
 /*
@@ -153,7 +151,7 @@ MOBILE - less than 950 px
     /*
     Sections
     */
-    .section-layout, .footer-layout {
+    .section-layout, .footer-layout .footer-div {
         max-width: 750px;
         margin: 10px auto 0 auto;
         line-height: 1.5;
@@ -206,7 +204,7 @@ MOBILE - less than 650 px
     /*
     Sections
     */
-    .section-layout, .footer-layout {
+    .section-layout, .footer-layout .footer-div {
         max-width: 480px;
         min-width: 450px;
         margin: 10px auto 0 auto;

@@ -33,7 +33,7 @@ NAVIGATION MENU
     margin-bottom: 25px;
 }
 
-.nav-wrap .nav-menu .nav-btn .logo {
+.nav-wrap .nav-menu .nav-btn > div .logo {
     width: 30px;
     padding: 0px;
 }
@@ -97,15 +97,15 @@ GENERAL
 
 /*
 Background Color
-*/
+
 .ham-wrap .menu-bar {
-    /* Positioning */
     position: fixed;
     z-index: 20;
     max-width: 100%;
     min-width: 100%;
     background-color: var(--nav-color);
 }
+*/
 
 /*
 Top and bottom line

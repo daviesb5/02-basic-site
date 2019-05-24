@@ -6,7 +6,7 @@ NAVIGATION MENU
 
 .nav-wrap {
     position: fixed;
-    z-index: 5;
+    z-index: 20;
     max-width: 100%;
     min-width: 100%;
     background-color: var(--nav-color);
@@ -66,7 +66,7 @@ GENERAL
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 25;
 }
 
 .ham-wrap .toggler {
@@ -240,7 +240,7 @@ SWITCHES BETWEEN MENUS
 DESKTOP - more than 950 px
 */
 @media (min-width: 950px){
-    .menu-wrap {
+    .ham-wrap {
         display: none;
     }
 }

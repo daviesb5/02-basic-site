@@ -3,7 +3,7 @@ GENERAL
 */
 :root {
     /* First Color Scheme */
-    --bg-color: rgba(232, 232, 232, 1.0);
+    --body-color: rgba(232, 232, 232, 1.0);
     --main-color: rgba(85, 136, 163, 1.0);
     --secondary-color: rgba(20, 83, 116, 0.75);
     --footer-color: rgba(0, 51, 78, 1.0);
@@ -14,7 +14,7 @@ GENERAL
     --showcase-color: rgba(69,146,175, 0.75);
     --overlay-color: rgba(24, 39, 51, 0.85);
     /* Gray Bg */
-    --gray-bg-color: rgba (187, 187, 187, 1.0);
+    --gray-bg-color: rgba(187, 187, 187, 1.0);
 }
 
 html, body {
@@ -25,62 +25,51 @@ html, body {
 body {
     background-color: var(--gray-bg-color);
     font-family: 'Raleway', Helvetica, sans-serif;
+    padding-bottom: 100px;
 }
-
-/*
-Ham / Nav Bar Background
-
-.main-menu-wrap {
-    position: fixed;
-    top: 100;
-    left: 100;
-    z-index: 20;
-}
-
-.main-menu-wrap .menu-bar {
-    position: absolute;
-    top: 100;
-    left: 100;
-    z-index: 21;
-    width: 100px;
-    height: 50px;
-    background-color: var(--nav-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-*/
 
 /*
 Sections
 */
+.section-layout, .footer-layout {
+    max-width: 1000px;
+    margin: 15px auto 0 auto;
+    line-height: 1.75;
+    padding: 25px 65px;
+    display: flex;
+}
+
 .section-layout {
-    max-width: 1400px;
+    background-color: var(--body-color);
+}
+
+.section-layout .section-text {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.section-layout .section-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.section-layout .section-text p {
+    margin-top: 12px;
+    margin-left: 0.5rem;
 }
 
 /*
-DESKTOP - more than 950 px
+List & Inter-text Links
 */
-@media (min-width: 950px){
-    .menu-wrap {
-        display: none;
-    }
+.section-layout .section-text ul {
+    list-style-type: none;
+    margin-top: 1.1rem;
+    margin-left: 1.5rem;
 }
 
-/*
-MOBILE - less than 950 px
-*/
-@media (max-width: 950px){
-    .nav-wrap .nav-menu {
-        display: none;
-    }
-}
-
-/*
-MOBILE - less than 700 px
-*/
-@media (max-width: 700px){
-    .nav-wrap .nav-menu {
-        display: none;
-    }
+.section-layout .section-text ul a {
+    font-size: 1.0rem;
+    font-style: oblique;
+    color: var(--btn-color);
+    text-decoration: none;
 }

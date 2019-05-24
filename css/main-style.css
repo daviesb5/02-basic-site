@@ -81,8 +81,8 @@ List & Inter-text Links
 Footer
 */
 .footer-layout {
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: bottom;
     z-index: 1;
     max-width: 100%;
     min-width: 100%;
@@ -94,7 +94,7 @@ Footer
     margin: 10px auto 0 auto;
     background-color: var(--footer-color);
     padding: 10px 0;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -112,6 +112,20 @@ Footer
 .footer-layout .grid-layout .media-btn .img-cell {
     width: 75%;
     padding: 10px;
+}
+
+.footer-layout .footer-div {
+    /* Split */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-layout .grid-layout,
+.footer-layout .section-text {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 30%;
 }
 
 .footer-layout .section-text p {

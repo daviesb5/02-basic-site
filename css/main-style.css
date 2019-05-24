@@ -37,6 +37,7 @@ Sections
     line-height: 1.75;
     padding: 25px 65px;
     display: flex;
+    z-index: 0;
 }
 
 .section-layout {
@@ -49,11 +50,12 @@ Sections
 }
 
 .section-layout .section-text h3 {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     margin-bottom: 15px;
 }
 
 .section-layout .section-text p {
+    font-size: 1.2rem;
     margin-top: 12px;
     margin-left: 0.5rem;
 }
@@ -68,8 +70,171 @@ List & Inter-text Links
 }
 
 .section-layout .section-text ul a {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     font-style: oblique;
-    color: var(--btn-color);
+    color: var(--secondary-color);
     text-decoration: none;
+}
+
+/*
+Footer
+*/
+.footer-layout {
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    max-width: 100%;
+    min-width: 100%;
+    background-color: var(--footer-color);
+}
+
+.footer-layout .grid-layout {
+    max-width: 800px;
+    margin: 10px auto 0 auto;
+    background-color: var(--footer-color);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-layout .grid-layout .media-btn {
+    width: 100px;
+    height: 100px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.footer-layout .grid-layout .media-btn .img-cell {
+    width: 75%;
+    padding: 10px;
+}
+
+.footer-layout .section-text p {
+    color: #fff;
+    bottom: 0;
+}
+
+/*
+======================
+SWITCHES BETWEEN MENUS
+======================
+*/
+
+/*
+DESKTOP - more than 950 px
+*/
+@media (min-width: 950px){
+    
+}
+
+/*
+MOBILE - less than 950 px
+*/
+@media (max-width: 950px){
+    /*
+    Sections
+    */
+    .section-layout, .footer-layout {
+        max-width: 750px;
+        margin: 10px auto 0 auto;
+        line-height: 1.5;
+        padding: 25px 50px;
+        display: flex;
+    }
+
+    .section-layout {
+        background-color: #fff;
+    }
+
+    .section-layout .section-text {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .section-layout .section-text h3 {
+        font-size: 1.35rem;
+        margin-bottom: 12px;
+    }
+
+    .section-layout .section-text p {
+        font-size: 0.9rem;
+        margin-top: 12px;
+        margin-left: 0.25rem;
+    }
+
+    /*
+    List & Inter-text Links
+    */
+    .section-layout .section-text ul {
+        list-style-type: none;
+        margin-top: 0.3rem;
+        margin-left: 1.5rem;
+    }
+
+    .section-layout .section-text ul a {
+        font-size: 1.05rem;
+        font-weight: bold;
+        font-style: oblique;
+        color: var(--footer-color);
+        text-decoration: none;
+    }
+}
+
+/*
+MOBILE - less than 650 px
+*/
+@media (max-width: 650px){
+    /*
+    Sections
+    */
+    .section-layout, .footer-layout {
+        max-width: 480px;
+        min-width: 450px;
+        margin: 10px auto 0 auto;
+        line-height: 1.35;
+        padding: 15px 40px;
+        display: flex;
+    }
+
+    .section-layout {
+        background-color: #fff;
+    }
+
+    .section-layout .section-text {
+        padding-top: 4.5px;
+        padding-bottom: 8px;
+    }
+
+    .section-layout .section-text h3 {
+        font-size: 1.25rem;
+        margin-bottom: 10.5px;
+    }
+
+    .section-layout .section-text p {
+        font-size: 0.8rem;
+        margin-top: 10.5px;
+        margin-left: 0.0rem;
+    }
+
+    /*
+    List & Inter-text Links
+    */
+    .section-layout .section-text ul {
+        list-style-type: none;
+        margin-top: 0.275rem;
+        margin-left: 0.5rem;
+    }
+
+    .section-layout .section-text ul a {
+        font-size: 1.0rem;
+        font-weight: bold;
+        font-style: oblique;
+        color: var(--footer-color);
+        text-decoration: none;
+    }  
 }

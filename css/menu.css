@@ -5,7 +5,6 @@ NAVIGATION MENU
 */
 
 .nav-wrap {
-    /* Positioning */
     position: fixed;
     z-index: 5;
     max-width: 100%;

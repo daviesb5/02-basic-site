@@ -84,13 +84,15 @@ Footer
     max-width: 100%;
     min-width: 100%;
     background-color: var(--footer-color);
+    margin-top: 50px;
+    padding: 25px;
 }
 
 .footer-layout .footer-div {
     max-width: 800px;
     margin: 0px auto 0 auto;
     background-color: var(--footer-color);
-    padding: 10px 0;
+    padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -111,32 +113,42 @@ Footer
 
 .footer-layout .footer-div .flex-div .container .container-child {
     flex: 1;
+    /* fixed-size */
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-layout .footer-div .flex-div .container .container-child .media-btn {
-    width: 50px;
-    height: 50px;
-    line-height: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .footer-layout .footer-div .flex-div .container .container-child .media-btn > div {
-    vertical-align: bottom;
+    max-width: 60px;
+    max-height: 60px;
 }
 
 .footer-layout .footer-div .flex-div .container .container-child .media-btn > div .logo {
-    width: 30px;
-    height: 30px;
-    padding: 0px
+    max-width: 60px;
+    max-height: 60px;
+    padding: 10px;
 }
 
 .footer-layout .footer-div .flex-div .container .container-child .section-text {
-
+    padding: 0px;
 }
 
 .footer-layout .footer-div .flex-div .container .container-child .section-text p {
-    
+    color: #fff;
+    font-size: 0.9rem;
 }
 
 /*
@@ -202,6 +214,83 @@ MOBILE - less than 950 px
         font-style: oblique;
         color: var(--footer-color);
         text-decoration: none;
+    }
+
+    /*
+    Footer
+    */
+    .footer-layout {
+        position: absolute;
+        bottom: bottom;
+        z-index: 10;
+        max-width: 100%;
+        min-width: 100%;
+        background-color: var(--footer-color);
+        margin-top: 35px;
+        padding: 20px;
+    }
+
+    .footer-layout .footer-div {
+        max-width: 600px;
+        margin: 10px auto 0 auto;
+        background-color: var(--footer-color);
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-layout .footer-div .flex-div {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .footer-layout .footer-div .flex-div .container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-layout .footer-div .flex-div .container .container-child {
+        flex: 1;
+        /* fixed-size */
+        max-width: 600px;
+        margin: 10px auto 0 auto;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-layout .footer-div .flex-div .container .container-child .media-btn {
+        width: 45px;
+        height: 45px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-layout .footer-div .flex-div .container .container-child .media-btn > div {
+        max-width: 45px;
+        max-height: 45px;
+    }
+
+    .footer-layout .footer-div .flex-div .container .container-child .media-btn > div .logo {
+        max-width: 45px;
+        max-height: 45px;
+        padding: 10px;
+    }
+
+    .footer-layout .footer-div .flex-div .container .container-child .section-text {
+        padding: 0px;
+    }
+
+    .footer-layout .footer-div .flex-div .container .container-child .section-text p {
+        color: #fff;
+        font-size: 0.75rem;
     }
 }
 

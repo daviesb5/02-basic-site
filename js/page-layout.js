@@ -11,6 +11,27 @@ function hamMenu(){
     }
 }
 
+/*
+//Media Query – JS
+function checkWidth(size1, size2, size3){
+    if (size1.matches){
+        hashDif = 80;
+        alert ("hashDif = " + hashDif);
+    } else if (size2.matches){
+        hashDif = 90;
+        alert ("hashDif = " + hashDif);
+    } else if (size3.matches){
+        hashDif = 500;
+        alert ("hashDif = " + hashDif);
+    }
+}
+
+//Width Options
+var hashDif;
+var size1 = window.matchMedia("(max-width: 700px)");
+var size2 = window.matchMedia("(max-width: 950px)");
+var size3 = window.matchMedia("(min-width: 950px)");
+*/
 
 /*
 Adjusts Anchor a few pixels up.

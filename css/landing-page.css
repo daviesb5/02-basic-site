@@ -109,3 +109,27 @@ MOBILE - less than 700 px
         font-size: 1.2rem;
     }
 }
+
+/*
+Testing
+
+#parent-ref {
+    position: relative;
+    max-width: 100%;
+    background: #ccc;
+    overflow: hidden;
+
+}
+*/
+
+.anchor-edit:before {
+    min-height: 0px;
+    display: block;
+    content: '';
+}
+
+.anchor-edit {
+    position: relative;
+    top: -75px;
+    z-index: -20;
+}

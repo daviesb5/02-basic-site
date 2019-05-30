@@ -3,7 +3,7 @@ GENERAL
 */
 :root {
     /* First Color Scheme */
-    --body-color: rgba(232, 232, 232, 1.0);
+    --section-color: rgba(232, 232, 232, 1.0);
     --main-color: rgba(85, 136, 163, 1.0);
     --secondary-color: rgba(20, 83, 116, 0.75);
     --footer-color: rgba(0, 51, 78, 1.0);
@@ -33,25 +33,27 @@ Sections
 */
 .section-layout {
     max-width: 1000px;
-    margin: 15px auto 0 auto;
-    line-height: 1.75;
-    padding: 25px 65px;
-    display: flex;
-    z-index: 0;
-    background-color: var(--body-color);
+    margin: 40px auto 0 auto;
+    background-color: var(--section-color);
 }
 
-.section-layout .section-text {
-    padding-top: 5px;
-    padding-bottom: 10px;
+.section-layout > div {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
-.section-layout .section-text h3 {
+.section-layout > div .section-text {
+    max-width: 1000px;
+    flex: 2;
+}
+
+.section-layout > div .section-text h3 {
     font-size: 1.65rem;
     margin-bottom: 15px;
 }
 
-.section-layout .section-text p {
+.section-layout > div .section-text p {
     font-size: 1.2rem;
     margin-top: 12px;
     margin-left: 0.5rem;
@@ -83,13 +85,13 @@ Profile Image
 /*
 List & Inter-text Links
 */
-.section-layout .section-text ul {
+.section-layout > div .section-text ul {
     list-style-type: none;
     margin-top: 1.1rem;
     margin-left: 1.5rem;
 }
 
-.section-layout .section-text ul a {
+.section-layout > div .section-text ul a {
     font-size: 1.2rem;
     font-weight: bold;
     font-style: oblique;
@@ -194,29 +196,29 @@ MOBILE - less than 950 px
     /*
     Sections
     */
-    .section-layout, .footer-layout .footer-div {
-        max-width: 750px;
-        margin: 10px auto 0 auto;
-        line-height: 1.5;
-        padding: 25px 50px;
-        display: flex;
-    }
-
     .section-layout {
-        background-color: #fff;
+        max-width: 750px;
+        margin: 15px auto 0 auto;
+        background-color: var(--section-color);
+    }
+    
+    .section-layout > div {
+        max-width: 750px;
+        padding: 15px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    
+    .section-layout > div .section-text {
+        max-width: 750px;
     }
 
-    .section-layout .section-text {
-        padding-top: 5px;
-        padding-bottom: 10px;
-    }
-
-    .section-layout .section-text h3 {
+    .section-layout > div .section-text h3 {
         font-size: 1.35rem;
         margin-bottom: 12px;
     }
 
-    .section-layout .section-text p {
+    .section-layout > div .section-text p {
         font-size: 0.9rem;
         margin-top: 12px;
         margin-left: 0.25rem;
@@ -225,13 +227,13 @@ MOBILE - less than 950 px
     /*
     List & Inter-text Links
     */
-    .section-layout .section-text ul {
+    .section-layout > div .section-text ul {
         list-style-type: none;
         margin-top: 0.3rem;
         margin-left: 1.5rem;
     }
 
-    .section-layout .section-text ul a {
+    .section-layout > div .section-text ul a {
         font-size: 1.05rem;
         font-weight: bold;
         font-style: oblique;
@@ -324,30 +326,29 @@ MOBILE - less than 650 px
     /*
     Sections
     */
-    .section-layout, .footer-layout .footer-div {
-        max-width: 480px;
-        min-width: 450px;
-        margin: 10px auto 0 auto;
-        line-height: 1.35;
-        padding: 15px 40px;
-        display: flex;
-    }
-
     .section-layout {
+        max-width: 550px;
         background-color: #fff;
     }
 
-    .section-layout .section-text {
+    .section-layout > div {
+        max-width: 550px;
+        padding: 15px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .section-layout > div .section-text {
         padding-top: 4.5px;
         padding-bottom: 8px;
     }
 
-    .section-layout .section-text h3 {
+    .section-layout > div .section-text h3 {
         font-size: 1.25rem;
         margin-bottom: 10.5px;
     }
 
-    .section-layout .section-text p {
+    .section-layout > div .section-text p {
         font-size: 0.8rem;
         margin-top: 10.5px;
         margin-left: 0.0rem;
@@ -356,13 +357,13 @@ MOBILE - less than 650 px
     /*
     List & Inter-text Links
     */
-    .section-layout .section-text ul {
+    .section-layout > div .section-text ul {
         list-style-type: none;
         margin-top: 0.275rem;
         margin-left: 0.5rem;
     }
 
-    .section-layout .section-text ul a {
+    .section-layout > div .section-text ul a {
         font-size: 1.0rem;
         font-weight: bold;
         font-style: oblique;

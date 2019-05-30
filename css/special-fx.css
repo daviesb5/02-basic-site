@@ -86,18 +86,20 @@ Logo design
 /*
 Music Grid
 */
-.section-layout .grid-layout {
+.section-layout > div .grid-layout {
     max-width: 1000px;
     margin: 10px auto 0 auto;
     background-color: var(--main-color);
     padding: 10px 0;
+    margin-top: -25px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
-.section-layout .grid-layout .music-cell {
+.section-layout > div .grid-layout .music-cell {
     width: 200px;
     height: 200px;
     line-height: 100px;
@@ -106,19 +108,19 @@ Music Grid
     margin: 10px auto 10px auto;
 }
 
-.section-layout .grid-layout .music-cell .flex-img-cell {
+.section-layout > div .grid-layout .music-cell .flex-img-cell {
     display: flex;
 }
 
-.section-layout .grid-layout .music-cell .white-bg {
+.section-layout > div .grid-layout .music-cell .white-bg {
     background-color: #fff;
 }
 
-.section-layout .grid-layout .music-cell .black-bg {
+.section-layout > div .grid-layout .music-cell .black-bg {
     background-color: #000;
 }
 
-.section-layout .grid-layout .music-cell .neutral-bg {
+.section-layout > div .grid-layout .music-cell .neutral-bg {
     background-color: #c7c7c7;
 }
 
@@ -139,24 +141,32 @@ MOBILE - less than 950 px
     /*
     Music Grid
     */
-    .section-layout .grid-layout {
-        max-width: 800px;
-        margin: 5px auto 0 auto;
+    .section-layout > div .grid-layout {
+        max-width: 750px;
+        margin: 10px auto 0 auto;
         background-color: var(--main-color);
-        padding: 5px 0;
+        padding: 10px 0;
+        margin-top: -25px;
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
+        box-sizing: border-box;
     }
-    
-    .section-layout .grid-layout .music-cell .flex-img-cell {
+
+    .section-layout > div .grid-layout .music-cell {
         width: 150px;
         height: 150px;
         line-height: 100px;
         text-align: center;
         padding: 5px 0;
         margin: 10px auto 10px auto;
+    }
+
+    .section-layout > div .grid-layout .music-cell .flex-img-cell {
+        width: 150px;
+        height: 150px;
+        display: flex;
     }
 }
 
@@ -177,23 +187,30 @@ MOBILE - less than 700 px
     /*
     Music Grid
     */
-    .section-layout .grid-layout {
-        max-width: 600px;
-        margin: 5px auto 0 auto;
+    .section-layout > div .grid-layout {
+        max-width: 450px;
+        margin: 0 auto 0 auto;
         background-color: var(--main-color);
-        padding: 0px 0;
+        padding: 10px 0;
+        margin-top: -20px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
     
-    .section-layout .grid-layout .music-cell .flex-img-cell {
+    .section-layout > div .grid-layout .music-cell {
         width: 125px;
         height: 125px;
-        line-height: 50px;
+        line-height: 100px;
         text-align: center;
         padding: 5px 0;
-        margin-bottom: 0px;
+        margin: 10px auto 10px auto;
+    }
+
+    .section-layout > div .grid-layout .music-cell .flex-img-cell {
+        width: 125px;
+        height: 125px;
+        display: flex;
     }
 }

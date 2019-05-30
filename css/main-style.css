@@ -14,7 +14,7 @@ GENERAL
     --showcase-color: rgba(69,146,175, 0.75);
     --overlay-color: rgba(24, 39, 51, 0.85);
     /* Gray Bg */
-    --gray-bg-color: rgba(187, 187, 187, 1.0);
+    --gray-bg-color: rgba(195, 195, 195, 1.0);
 }
 
 html, body {
@@ -55,6 +55,29 @@ Sections
     font-size: 1.2rem;
     margin-top: 12px;
     margin-left: 0.5rem;
+}
+
+/*
+Profile Image
+*/
+.profile-layout {
+    max-width: 500px;
+    min-width: 400px;
+    margin: 10px auto 0 auto;
+    line-height: 1.5;
+    padding: 10px;
+    display: flex;
+    z-index: 0;
+    background-color: var(--main-color);
+}
+
+.profile-layout .section-text {
+    padding: 5px;
+}
+
+.profile-layout .section-text .pic {
+    max-width: 400px;
+    max-height: 400px;
 }
 
 /*

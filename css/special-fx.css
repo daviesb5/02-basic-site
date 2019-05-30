@@ -84,25 +84,42 @@ Logo design
 }
 
 /*
-MOBILE - less than 950 px
+Music Grid
 */
-@media (max-width: 950px){
-    .reg-header {
-        background-color: var(--showcase-color);
-        color: #fff;
-        height: 45vh;
-        position: relative;
-        margin-top: 0px;
-    }
-    .logo {
-        max-width: 225px;
-    }
-    .showcase-inner h1 {
-        font-size: 3rem;
-    }
-    .showcase p {
-        font-size: 0.9rem;
-    }
+.section-layout .grid-layout {
+    max-width: 1000px;
+    margin: 10px auto 0 auto;
+    background-color: var(--main-color);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-layout .grid-layout .music-cell {
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px auto 10px auto;
+}
+
+.section-layout .grid-layout .music-cell .flex-img-cell {
+    display: flex;
+}
+
+.section-layout .grid-layout .music-cell .white-bg {
+    background-color: #fff;
+}
+
+.section-layout .grid-layout .music-cell .black-bg {
+    background-color: #000;
+}
+
+.section-layout .grid-layout .music-cell .neutral-bg {
+    background-color: #c7c7c7;
 }
 
 /*
@@ -118,6 +135,29 @@ MOBILE - less than 950 px
     .showcase-inner p {
         font-size: 1.35rem;
     }
+
+    /*
+    Music Grid
+    */
+    .section-layout .grid-layout {
+        max-width: 800px;
+        margin: 5px auto 0 auto;
+        background-color: var(--main-color);
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .section-layout .grid-layout .music-cell .flex-img-cell {
+        width: 150px;
+        height: 150px;
+        line-height: 100px;
+        text-align: center;
+        padding: 5px 0;
+        margin: 10px auto 10px auto;
+    }
 }
 
 /*
@@ -132,5 +172,28 @@ MOBILE - less than 700 px
     }
     .showcase-inner p {
         font-size: 1.2rem;
+    }
+
+    /*
+    Music Grid
+    */
+    .section-layout .grid-layout {
+        max-width: 600px;
+        margin: 5px auto 0 auto;
+        background-color: var(--main-color);
+        padding: 0px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .section-layout .grid-layout .music-cell .flex-img-cell {
+        width: 125px;
+        height: 125px;
+        line-height: 50px;
+        text-align: center;
+        padding: 5px 0;
+        margin-bottom: 0px;
     }
 }

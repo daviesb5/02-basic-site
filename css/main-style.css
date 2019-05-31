@@ -45,7 +45,6 @@ Sections
 
 .section-layout > div .section-text {
     max-width: 1000px;
-    flex: 2;
 }
 
 .section-layout > div .section-text h3 {
@@ -64,20 +63,31 @@ Profile Image
 */
 .profile-layout {
     max-width: 500px;
-    min-width: 400px;
-    margin: 10px auto 0 auto;
-    line-height: 1.5;
-    padding: 10px;
-    display: flex;
-    z-index: 0;
+    margin: 40px auto 0 auto;
     background-color: var(--main-color);
 }
 
-.profile-layout .section-text {
-    padding: 5px;
+.profile-layout > div {
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
-.profile-layout .section-text .pic {
+.profile-layout > div .section-text {
+    height: 400px;
+    width: 400px;
+    margin: 30px auto 30px auto;
+    display: flex;
+}
+
+.profile-layout > div .section-text .profile {
+    max-width: 400px;
+    max-height: 400px;
+    margin: auto;
+}
+
+.profile-layout > div .section-text .profile .pic {
     max-width: 400px;
     max-height: 400px;
 }
@@ -225,6 +235,40 @@ MOBILE - less than 950 px
     }
 
     /*
+    Profile Image
+    */
+    .profile-layout {
+        max-width: 400px;
+        margin: 30px auto 0 auto;
+        background-color: var(--main-color);
+    }
+
+    .profile-layout > div {
+        padding: 20px;
+        margin: 20px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+    .profile-layout > div .section-text {
+        height: 300px;
+        width: 300px;
+        margin: 20px auto 20px auto;
+        display: flex;
+    }
+
+    .profile-layout > div .section-text .profile {
+        max-width: 300px;
+        max-height: 300px;
+        margin: auto;
+    }
+
+    .profile-layout > div .section-text .profile .pic {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    /*
     List & Inter-text Links
     */
     .section-layout > div .section-text ul {
@@ -352,6 +396,40 @@ MOBILE - less than 650 px
         font-size: 0.8rem;
         margin-top: 10.5px;
         margin-left: 0.0rem;
+    }
+
+    /*
+    Profile Image
+    */
+    .profile-layout {
+        max-width: 300px;
+        margin: 20px auto 0 auto;
+        background-color: var(--main-color);
+    }
+
+    .profile-layout > div {
+        padding: 15px;
+        margin: 15px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .profile-layout > div .section-text {
+        height: 200px;
+        width: 200px;
+        margin: 15px auto 15px auto;
+        display: flex;
+    }
+
+    .profile-layout > div .section-text .profile {
+        height: 200px;
+        width: 200px;
+        margin: auto;
+    }
+
+    .profile-layout > div .section-text .profile .pic {
+        height: 200px;
+        width: 200px;
     }
 
     /*

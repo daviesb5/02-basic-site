@@ -3,6 +3,7 @@ GENERAL
 */
 :root {
     --bg-image: url('https://upload.wikimedia.org/wikipedia/commons/b/be/Chalkboard_at_school.jpg');
+    --bg-color: rgba(69,46,75, 0.75);
     --menu-speed: 0.75s;
 }
 
@@ -24,7 +25,7 @@ body {
 }
 
 .reg-header {
-    background-color: var(--showcase-color);
+    background-color: var(--bg-color);
     color: #fff;
     height: 50vh;
     position: relative;

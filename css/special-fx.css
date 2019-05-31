@@ -3,7 +3,7 @@ GENERAL
 */
 :root {
     --bg-image: url('https://upload.wikimedia.org/wikipedia/commons/b/be/Chalkboard_at_school.jpg');
-    --bg-color: rgba(69,46,75, 0.75);
+    --bg-color: rgba(0, 0, 0, 0.65);
     --menu-speed: 0.75s;
 }
 
@@ -27,7 +27,7 @@ body {
 .reg-header {
     background-color: var(--bg-color);
     color: #fff;
-    height: 50vh;
+    height: 40vh;
     position: relative;
     margin-top: 0px;
     padding-top: 5rem;
@@ -139,6 +139,10 @@ MOBILE - less than 950 px
         font-size: 1.35rem;
     }
 
+    .reg-header {
+        height: 30vh;
+    }
+
     /*
     Music Grid
     */
@@ -183,6 +187,10 @@ MOBILE - less than 700 px
     }
     .showcase-inner p {
         font-size: 1.2rem;
+    }
+
+    .reg-header {
+        height: 20vh;
     }
 
     /*

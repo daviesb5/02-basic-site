@@ -39,6 +39,8 @@ function setImage(webpage){
         /* root_img.style.setProperty('--bg-color', 'rgba(24, 24, 24, 0.75)'); */
         root_img.style.setProperty('--bg-image', 'url(https://upload.wikimedia.org/wikipedia/commons/3/3f/Germany_-_Berlin_and_Potsdam%2C_Kolonnaden_Communs_Pdm._%2828213041075%29.jpg)');
 
+    } else if (webpage = "web-apps") {
+        root_img.style.setProperty('--bg-image', 'source src="../vid/khet-game-1.MP4" type="video/mp4"');
     } else {
         alert("No image found");
     }

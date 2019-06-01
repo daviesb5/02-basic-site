@@ -17,13 +17,6 @@ body {
     line-height: 1.4;
 }
 
-.container {
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 3rem;
-}
-
 .reg-header {
     background-color: var(--bg-color);
     color: #fff;
@@ -31,6 +24,14 @@ body {
     position: relative;
     margin-top: 0px;
     padding-top: 5rem;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0 3rem;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
 }
 
 .reg-header:before {

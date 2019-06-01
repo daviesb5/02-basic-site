@@ -3,7 +3,7 @@ GENERAL
 */
 :root {
     --bg-image: url('https://upload.wikimedia.org/wikipedia/commons/b/be/Chalkboard_at_school.jpg');
-    --bg-color: rgba(0, 0, 0, 0.5 );
+    --bg-color: rgba(0, 0, 0, 0.5);
     --menu-speed: 0.75s;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1000px;
     margin: auto;
     overflow: hidden;
     padding: 0 3rem;

@@ -102,7 +102,6 @@ List & Inter-text Links
 }
 
 .section-layout > div .section-text ul a {
-    font-size: 1.2rem;
     font-weight: bold;
     font-style: oblique;
     color: var(--secondary-color);
@@ -278,7 +277,6 @@ MOBILE - less than 950 px
     }
 
     .section-layout > div .section-text ul a {
-        font-size: 1.05rem;
         font-weight: bold;
         font-style: oblique;
         color: var(--footer-color);
@@ -442,7 +440,6 @@ MOBILE - less than 650 px
     }
 
     .section-layout > div .section-text ul a {
-        font-size: 1.0rem;
         font-weight: bold;
         font-style: oblique;
         color: var(--footer-color);

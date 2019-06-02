@@ -78,29 +78,6 @@ body {
 }
 
 /*
-Header: Cover Video
-*/
-.vid-header {
-    background-color: var(--bg-color);
-    color: #fff;
-    height: 40vh;
-    position: relative;
-    margin-top: 0px;
-    padding-top: 5rem;
-}
-
-.vid-header:before {
-    content:'';
-    background: var(--bg-image) no-repeat top center/cover;
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-/*
 Logo design
 */
 .logo {
@@ -109,7 +86,7 @@ Logo design
 }
 
 /*
-Music Grid
+Grid (General)
 */
 .section-layout > div .grid-layout {
     max-width: 1000px;
@@ -124,6 +101,9 @@ Music Grid
     box-sizing: border-box;
 }
 
+/*
+Music Grid
+*/
 .section-layout > div .grid-layout .music-cell {
     width: 200px;
     height: 200px;
@@ -150,6 +130,43 @@ Music Grid
 }
 
 /*
+Web-Apps Menu / Grid
+*/
+.section-layout > div .section-text .detail-text {
+    background-color: var(--showcase-color);
+    padding: 15px 15px;
+    margin: 30px auto 0 auto;
+    color: var(--section-color);
+    min-height: 15vh;
+    max-height: 40vh;
+}
+
+.section-layout > div .section-text .detail-text span {
+    padding: 5px 5px;
+    margin: 10px auto 0 auto;
+}
+
+.section-layout > div .section-text .detail-text span p {
+    font-size: 1.2rem;
+    margin-top: 12px;
+    margin-left: 0.5rem;
+}
+
+.section-layout > div .grid-layout .item-cell {
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px auto 10px auto;
+}
+
+.section-layout > div .grid-layout .item-cell .flex-img-cell {
+    display: flex;
+}
+
+
+/*
 MOBILE - less than 950 px
 */
 @media (max-width: 950px){
@@ -168,7 +185,7 @@ MOBILE - less than 950 px
     }
 
     /*
-    Music Grid
+    Grid (General)
     */
     .section-layout > div .grid-layout {
         max-width: 750px;
@@ -183,6 +200,9 @@ MOBILE - less than 950 px
         box-sizing: border-box;
     }
 
+    /*
+    Music Grid
+    */
     .section-layout > div .grid-layout .music-cell {
         width: 150px;
         height: 150px;
@@ -193,6 +213,45 @@ MOBILE - less than 950 px
     }
 
     .section-layout > div .grid-layout .music-cell .flex-img-cell {
+        width: 150px;
+        height: 150px;
+        display: flex;
+    }
+
+    /*
+    Web-Apps Menu / Grid
+    */
+    .section-layout > div .section-text .detail-text {
+        background-color: var(--showcase-color);
+        padding: 10px 10px;
+        margin: 25px auto 0 auto;
+        color: var(--section-color);
+        min-height: 12vh;
+        max-height: 30vh;
+    }
+
+    .section-layout > div .section-text .detail-text span {
+        padding: 5px 5px;
+        margin: 10px auto 0 auto;
+    }
+
+    .section-layout > div .section-text .detail-text span p {
+        font-size: 1.35rem;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        margin-left: 0.5rem;
+    }
+
+    .section-layout > div .grid-layout .item-cell {
+        width: 150px;
+        height: 150px;
+        line-height: 100px;
+        text-align: center;
+        padding: 5px 0;
+        margin: 10px auto 10px auto;
+    }
+
+    .section-layout > div .grid-layout .item-cell .flex-img-cell {
         width: 150px;
         height: 150px;
         display: flex;
@@ -218,7 +277,7 @@ MOBILE - less than 700 px
     }
 
     /*
-    Music Grid
+    Grid (General)
     */
     .section-layout > div .grid-layout {
         max-width: 450px;
@@ -231,7 +290,10 @@ MOBILE - less than 700 px
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    
+
+    /*
+    Music Grid
+    */
     .section-layout > div .grid-layout .music-cell {
         width: 125px;
         height: 125px;
@@ -242,6 +304,44 @@ MOBILE - less than 700 px
     }
 
     .section-layout > div .grid-layout .music-cell .flex-img-cell {
+        width: 125px;
+        height: 125px;
+        display: flex;
+    }
+
+    /*
+    Web-Apps Menu / Grid
+    */
+    .section-layout > div .section-text .detail-text {
+        background-color: var(--showcase-color);
+        padding: 10px 10px;
+        margin: 20px auto 0 auto;
+        color: var(--section-color);
+        min-height: 10vh;
+        max-height: 20vh;
+    }
+
+    .section-layout > div .section-text .detail-text span {
+        padding: 5px 5px;
+        margin: 5px auto 0 auto;
+    }
+
+    .section-layout > div .section-text .detail-text span p {
+        font-size: 0.8rem;
+        margin-top: 10.5px;
+        margin-left: 0.0rem;
+    }
+
+    .section-layout > div .grid-layout .item-cell {
+        width: 125px;
+        height: 125px;
+        line-height: 100px;
+        text-align: center;
+        padding: 5px 0;
+        margin: 10px auto 10px auto;
+    }
+
+    .section-layout > div .grid-layout .item-cell .flex-img-cell {
         width: 125px;
         height: 125px;
         display: flex;

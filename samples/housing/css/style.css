@@ -1,0 +1,187 @@
+/*
+----------------------
+COLORS (RBG)
+----------------------
+rgb (34, 34, 34)
+rgb (26, 162, 220)
+rgb (255, 255, 255)
+rgb (0, 0, 0)
+
+----------------------
+COLORS (HEX)
+----------------------
+#222222
+#1AA2DC
+#FFFFFF
+#000000
+*/
+
+/*
+MAIN BODY
+*/
+html, body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #BBB;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+/*
+MENU
+*/
+.content-container {
+    z-index: 5;
+    background-color: #222222;
+    max-height: 75px;
+}
+
+.top-section {
+    /*
+    z-index: -5;
+    */
+    max-width: 1200px;
+    background-color: #222;
+    margin: 0px auto 0 auto;
+    line-height: 1.65;
+    padding: 0px 0px;
+    display:flex;
+    max-height: 75px;
+}
+.logo {
+    flex: 1;
+    order: 1;
+    min-width: 85px;
+    max-width: 90px;
+    min-height: 85px;
+    max-height: 90px;
+}
+.logo-img {
+    min-width: 85px;
+    max-width: 90px;
+    min-height: 85px;
+    max-height: 90px;
+}
+.navigation {
+    display: flex;
+    flex: 2;
+    order: 2;
+    margin: auto;
+}
+/*
+.hamburger-menu {
+    flex: 1;
+    order: 3;
+}
+*/
+.nav-button {
+    background-color: ;
+    border: none;
+    color: #DDD;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+/*
+SLIDE-SHOW
+*/
+.slide-show-container {
+    display: flex;
+    justify-content: space-between;
+}
+.slide-show {
+    max-width: 1300px;
+    margin: 30px auto 0 auto;
+    margin: auto;
+    background-attachment: #000;
+}
+.house-img {
+    max-width: 1300px;
+    margin: auto;
+}
+.credit {
+    font-size: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 50%;
+    margin: 0px auto 0 auto;
+}
+
+/*
+MOBILE
+*/
+@media (max-width: 950px) {
+    .content-container {
+        display: flex;
+        flex: 3;
+        justify-content: space-between;
+    }
+    .logo {
+        flex: 1;
+        order: 1;
+        min-width: 75px;
+        max-width: 80px;
+        min-height: 75px;
+        max-height: 80px;
+        /*
+        TEMP
+        */
+    }
+    .logo-img {
+        min-width: 75px;
+        max-width: 80px;
+        min-height: 75px;
+        max-height: 80px;
+    }
+    .navigation {
+        display: none;
+    }
+    .hamburger-menu {
+        flex: 1;
+        order: 3;
+        position: absolute;
+        display: inline;
+        margin-right: auto;
+        /*
+        TEMP
+        */
+        right: 15px;
+        top: 15px;
+    }
+    .bar-1 {
+        width: 35px;
+        height: 5px;
+        background-color: #1AA2DC;
+        margin: 6px 0;
+    }
+    /*
+    SLIDE-SHOW
+    */
+    .slide-show-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .slide-show {
+        max-width: 750px;
+        margin: 30px auto 0 auto;
+        margin: auto;
+        background-attachment: #000;
+    }
+    .house-img {
+        max-width: 750px;
+        margin: auto;
+    }
+    .credit {
+        font-size: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        flex-basis: 50%;
+        margin: 0px auto 0 auto;
+    }
+} 

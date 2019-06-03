@@ -114,7 +114,10 @@ Music Grid
 }
 
 .section-layout > div .grid-layout .music-cell .flex-img-cell {
+    width: 200px;
+    height: 200px;
     display: flex;
+    object-fit: cover;
 }
 
 .section-layout > div .grid-layout .music-cell .white-bg {
@@ -162,13 +165,16 @@ Web-Apps Menu / Grid
 }
 
 .section-layout > div .grid-layout .item-cell .flex-img-cell {
+    width: 200px;
+    height: 200px;
     display: flex;
+    object-fit: cover;
 }
 
 
 /*
 MOBILE - less than 950 px
-*/
+*/ 
 @media (max-width: 950px){
     .logo {
         max-width: 225px;

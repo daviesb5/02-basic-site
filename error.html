@@ -12,7 +12,8 @@
     <!--
         Other items
     -->
-    <script type="text/javascript" src="js/page-layout.js"></script>
+	<script type="text/javascript" src="js/page-layout.js"></script>
+	<script type="text/javascript" src="js/random-grid.js"></script>
     <link rel="stylesheet" href="css/main-style.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/special-fx.css">
@@ -112,16 +113,6 @@
 			</h2>
         </div>
     </header>
-
-    <div class="profile-layout">
-        <div>
-            <div class="section-text">
-                <div class="profile">
-                    <img class="pic" src="img/profile/current.jpg" alt="Braedon">
-                </div>
-            </div>
-        </div>
-	</div>
 	
 	<!--
 	<div class="header-layout" id="header">
@@ -241,27 +232,39 @@
 		</div>
 	</div>
 
-	<div class="footer-layout">
-		<div class="grid-layout">
-			<div class="social-media-cell">
-				<a class="logo-link" href="https://www.facebook.com/BraedonDaviesProfile/?modal=admin_todo_tour"
-					target="_blank">
-					<img class="flex-img-cell dark-bg" src="img/media-icons/fb-(char).png" alt="Facebook">
-				</a>
-			</div>
-			<div class="music-cell">
-				<a class="logo-link" href="https://www.linkedin.com/in/braedon-davies-a7859162/" target="_blank">
-					<img class="flex-img-cell dark-bg" src="img/media-icons/in-(char).png" alt="LinkedIn">
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="footer-text">
-		<p>
-			&copy BraedonDavies.com
-			<script>document.write(new Date().getFullYear())</script>
-		</p>
-	</div>
+	<footer class="footer-layout">
+        <div class="footer-div">
+            <div class="flex-div">
+                <div class="container">
+                    <div class="container-child">
+                        <div class="media-btn">
+                            <div>
+                                <a href="https://www.facebook.com/BraedonDaviesProfile/?modal=admin_todo_tour"
+                                    target="_blank">
+                                    <img class="logo" src="img/media-icons/fb-(char).png" alt="Facebook">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="media-btn">
+                            <div>
+                                <a href="https://www.linkedin.com/in/braedon-davies-a7859162/" target="_blank">
+                                    <img class="logo" src="img/media-icons/in-(char).png" alt="LinkedIn">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-child">
+                        <div class="section-text">
+                            <p>
+                                &copy BraedonDavies.com
+                                <script>document.write(new Date().getFullYear())</script>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

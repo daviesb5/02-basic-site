@@ -32,6 +32,7 @@ Changes Background Images
 Credit: the Net Ninja
 */
 var webpage;
+//src substitute – Source: BoltClock
 
 function setImage(webpage) {
     var root_img = document.querySelector(':root');
@@ -39,8 +40,6 @@ function setImage(webpage) {
         root_img.style.setProperty('--bg-image', 'url(https://upload.wikimedia.org/wikipedia/commons/3/3f/Germany_-_Berlin_and_Potsdam%2C_Kolonnaden_Communs_Pdm._%2828213041075%29.jpg)');
     } else if (webpage == "credits") {
         root_img.style.setProperty('--bg-image', 'url(https://upload.wikimedia.org/wikipedia/commons/b/be/Chalkboard_at_school.jpg)');
-    } else if (webpage == "error") {
-        root_img.style.setProperty('--bg-image', "src='img/waldo/jpg/header-img.jpg)'");
     } else {
         alert("No image found");
     }

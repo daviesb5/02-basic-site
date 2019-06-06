@@ -11,6 +11,9 @@ body {
     overflow-x:hidden;
 }
 
+/*
+COVER VIDEOS
+*/
 .v-header {
     background-color: var(--bg-color);
     height: 40vh;
@@ -126,7 +129,7 @@ MOBILE - less than 950 px
         font-size: 3.25rem;
     }
 
-    .sheader-content p {
+    .header-content p {
         font-size: 1.35rem;
     }
 }
